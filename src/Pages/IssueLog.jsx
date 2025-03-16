@@ -17,9 +17,10 @@ const IssueLog = () => {
   
   const dispatch = useDispatch();
   const issueLogData = useSelector((state) => state.issueLogs);
-  console.log('Issue log data from issue log page ..........',issueLogData);
   
   const filteredData = issueLogData.filter((issue) => issue.slaMiss[0]?.status === false);
+  console.log('Issue log data from issue log page ..........',filteredData);
+
   const navigate = useNavigate()
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [openedit, setOpenedit] = useState(false);
@@ -71,7 +72,7 @@ const IssueLog = () => {
 
   const columns = [
     {
-      title: 'sl.no',
+      title: 'Sl.No',
       key: 'rowNumber',
       render: (text, record, index) => index + 1,
     },
@@ -103,6 +104,7 @@ const IssueLog = () => {
       key: 'issuedetails',
       render: (text, record) => (
         <Button type="link" onClick={() => showDetails(record)}>
+    
           {text.length > 15 ? `${text.substring(0, 15)}...` : text}
         </Button>
       ),
@@ -113,9 +115,10 @@ const IssueLog = () => {
       title: 'Status',
       dataIndex: 'Status',
       key: 'Status',
-      render: (status) => (
+      render: (status,rec) => (
         <Tag color={status === 'pending' ? 'red' : status === 'Working on this' ? 'blue' : 'green'}>
           {status}
+
         </Tag>
       ),
     },
@@ -162,7 +165,7 @@ const IssueLog = () => {
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Badge
             className='!absolute !ml-5 !mb-4'
-            count={record.commentsTotal || 3}
+            count={record.Comment.length}
             size="small"
             style={{
               backgroundColor: '#52c41a',

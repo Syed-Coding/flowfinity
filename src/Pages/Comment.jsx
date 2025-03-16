@@ -21,7 +21,7 @@ const getBase64 = (file) =>
 
 const CommentSection = () => {
     const location = useLocation();
-    console.log('locationhfghgggh',!location);
+    console.log('location',!location);
     
     const dispatch = useDispatch();
   const comments = useSelector((state) => {
@@ -30,7 +30,7 @@ const CommentSection = () => {
     return state.issueLogs});
     
     const updatedNewData = comments?.filter(x => x.ticketNumber === location.state.ticketNumber)
-    console.log('xxxxxxxxxxxxxxxxxx',comments);
+    console.log('commmmmmmm',comments);
     
     const [value, setValue] = useState('');
     const [fileList, setFileList] = useState([]);

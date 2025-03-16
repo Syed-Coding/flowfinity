@@ -37,7 +37,6 @@ const AddTableDataForm = () => {
                     sladetails: null,
                 }
             ],
-            commentsTotal: 2,
             Comment: [
                 
             ],

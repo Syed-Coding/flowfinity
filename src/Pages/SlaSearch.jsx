@@ -15,7 +15,6 @@ const { Title, Text } = Typography;
 const SlaSearch = () => {
   const dispatch = useDispatch();
   const issueLogData = useSelector((state) => state.issueLogs);
-  console.log(issueLogData,"this is come from sla search ");
   
   const navigate =useNavigate()
 
@@ -32,6 +31,8 @@ const SlaSearch = () => {
   const filteredData = issueLogData.filter(
     (issue) => issue.slaMiss && issue.slaMiss[0]?.status === true
   );
+
+  console.log(filteredData,"this is come from sla search ");
 
   // Show SLA details in modal
   const showSlaDetails = (slaMiss) => {
@@ -70,7 +71,7 @@ const SlaSearch = () => {
   // Table columns
   const columns = [
     {
-      title: "#",
+      title: "Sl.No",
       key: "rowNumber",
       render: (text, record, index) => index + 1,
     },
@@ -172,7 +173,8 @@ const SlaSearch = () => {
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Badge
             className='!absolute !ml-5 !mb-4'
-            count={record.commentsTotal || 3}
+            count={record.Comment.length}
+          
             size="small"
             style={{
               backgroundColor: '#52c41a',

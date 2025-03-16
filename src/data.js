@@ -1,7 +1,7 @@
 export const issueLog = [
   {
     ticketNumber: "ABC123JN1",
-    Client: "XYZ",
+    Client: "Client B",
     Region: "Prod",
     issueClassification: "long run in DW_10 ",
     issuedetails:
@@ -18,12 +18,12 @@ export const issueLog = [
         sladetails: null,
       },
     ],
-    CommentsTotal: 0,
+
     Comment: [],
   },
   {
     ticketNumber: "ABC123JN2",
-    Client: "ABC",
+    Client: "Client C",
     Region: "PROD",
     issueClassification: "long run in DW_10",
     issuedetails:
@@ -39,12 +39,12 @@ export const issueLog = [
         sladetails: null,
       },
     ],
-    CommentsTotal: 0,
+
     Comment: [],
   },
   {
     ticketNumber: "ABC123JN3",
-    Client: "XYZ",
+    Client: "Client A",
     Region: "UAT",
     issueClassification: "long run in DM ",
     issuedetails:
@@ -53,12 +53,12 @@ export const issueLog = [
     issueAssignedTo: "Ram",
     Status: "Working on this", // when working comments were added and  assignation occurs
     slaMiss: false,
-    CommentsTotal: 1,
+
     Comment: [], // here one comment is added defaultly when assignation occurs
   },
   {
     ticketNumber: "ABC123JN4",
-    Client: "KMG",
+    Client: "Client A",
     Region: "Prod",
     issueClassification: "long run in Claim ",
     issuedetails:
@@ -75,12 +75,12 @@ export const issueLog = [
         sladetails: null,
       },
     ],
-    commentsTotal: 2,
+
     Comment: [],
   },
   {
     ticketNumber: "ABC123JN5",
-    Client: "MJH",
+    Client: "Client C",
     Region: "Prod",
     issueClassification: "long run in Member ",
     issuedetails:
@@ -98,12 +98,11 @@ export const issueLog = [
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
       },
     ],
-    CommentsTotals: 5,
     Comment: [],
   },
   {
     ticketNumber: "ABC123JN6",
-    Client: "XYZ",
+    Client: "Client A",
     Region: "Region 2",
     issueClassification: "long run in DW_10 ",
     issuedetails:
@@ -121,12 +120,11 @@ export const issueLog = [
           "printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       },
     ],
-    CommentsTotals: 6,
     Comment: [],
   },
   {
     ticketNumber: "ABC123JN7",
-    Client: "XYZ",
+    Client: "Cliient C",
     Region: "Region 1",
     issueClassification: "long run in DW_10 ",
     issuedetails:
@@ -149,7 +147,7 @@ export const issueLog = [
 
 export const activityLog = [
   {
-    Client: "MND",
+    Client: "Client B",
     Region: "Prod",
     MailSub:
       "long run in DW_10ustry's standard dummy text ever since the 1500s ",
@@ -167,7 +165,7 @@ export const activityLog = [
     Date: "26/1/2024",
   },
   {
-    Client: "CWD",
+    Client: "Client A",
     Region: "Region 3",
     MailSub:
       "2nd long run in DW_10ustry's standard dummy text ever since the 1500s ",

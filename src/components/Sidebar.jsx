@@ -40,10 +40,11 @@ const Sidebar = () => {
         <NavItem icon={MdDashboardCustomize} label="Dashboard" active={activeItem === "/dashboard"} onClick={() => setActiveItem("/dashboard")} />
         <NavItem icon={AiOutlineIssuesClose} label="Issue" active={activeItem === "/issue"} onClick={() => setActiveItem("/issue")} />
         <NavItem icon={TbLogs} label="Issue Log" active={activeItem === "/issue-log"} onClick={() => setActiveItem("/issue-log")} />
+        <NavItem icon={TbLogs} label="SLA Miss Log" active={activeItem === "/sla-search"} onClick={() => setActiveItem("/sla-search")} />
+
         <NavItem icon={Activity} label="Activity" active={activeItem === "/activity"} onClick={() => setActiveItem("/activity")} />
         <NavItem icon={TbLogs} label="Activity Log" active={activeItem === "/activity-log"} onClick={() => setActiveItem("/activity-log")} />
         <NavItem icon={ListTodo} label="My Todo" active={activeItem === "/my-todo"} onClick={() => setActiveItem("/my-todo")} />
-        <NavItem icon={TbLogs} label="SLA Miss Log" active={activeItem === "/sla-search"} onClick={() => setActiveItem("/sla-search")} />
       </nav>
 
       {/* Optional: User Profile or Footer */}
