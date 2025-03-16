@@ -1,23 +1,28 @@
 import React from 'react';
-const posts = [
-  { title: "5 Tips for a Healthier Lifestyle", date: "October 10, 2023", excerpt: "Discover simple yet effective tips to improve your health and well-being." },
-  { title: "The Importance of Mental Health", date: "October 5, 2023", excerpt: "Learn why mental health is just as important as physical health." },
-  { title: "How to Stay Active at Home", date: "October 1, 2023", excerpt: "Explore easy ways to stay active without leaving your home." },
-];
-const services = [
-  { title: "Health Tracking", description: "Track your health metrics in real-time with our intuitive dashboard." },
-  { title: "Personalized Plans", description: "Get customized health plans tailored to your unique needs and goals." },
-  { title: "Expert Consultations", description: "Connect with certified health professionals for personalized advice." },
-  { title: "Nutrition Guidance", description: "Receive expert nutrition plans to fuel your body and mind." },
-  { title: "Fitness Programs", description: "Access curated fitness programs designed for all fitness levels." },
-  { title: "Mental Wellness", description: "Explore resources and tools to support your mental health and well-being." },
-];
-const testimonials = [
-  { name: "John Doe", review: "HealthProof has transformed the way I manage my health. Highly recommended!" },
-  { name: "Jane Smith", review: "The personalized plans are a game-changer. I feel healthier than ever!" },
-  { name: "Mike Johnson", review: "Expert consultations are top-notch. Great platform for health enthusiasts." },
-];
+import { useNavigate } from 'react-router';
+
 function PreviewPage() {
+  const posts = [
+    { title: "5 Tips for a Healthier Lifestyle", date: "October 10, 2023", excerpt: "Discover simple yet effective tips to improve your health and well-being." },
+    { title: "The Importance of Mental Health", date: "October 5, 2023", excerpt: "Learn why mental health is just as important as physical health." },
+    { title: "How to Stay Active at Home", date: "October 1, 2023", excerpt: "Explore easy ways to stay active without leaving your home." },
+  ];
+  const services = [
+    { title: "Health Tracking", description: "Track your health metrics in real-time with our intuitive dashboard." },
+    { title: "Personalized Plans", description: "Get customized health plans tailored to your unique needs and goals." },
+    { title: "Expert Consultations", description: "Connect with certified health professionals for personalized advice." },
+    { title: "Nutrition Guidance", description: "Receive expert nutrition plans to fuel your body and mind." },
+    { title: "Fitness Programs", description: "Access curated fitness programs designed for all fitness levels." },
+    { title: "Mental Wellness", description: "Explore resources and tools to support your mental health and well-being." },
+  ];
+  const testimonials = [
+    { name: "John Doe", review: "HealthProof has transformed the way I manage my health. Highly recommended!" },
+    { name: "Jane Smith", review: "The personalized plans are a game-changer. I feel healthier than ever!" },
+    { name: "Mike Johnson", review: "Expert consultations are top-notch. Great platform for health enthusiasts." },
+  ];
+const navigate= useNavigate()
+const handleClick = () => navigate('/dashboard')
+
   return (
     <div className="flex flex-col min-h-screen ">
       {/* navbar */}
@@ -46,7 +51,8 @@ function PreviewPage() {
         <p className="text-xl text-gray-600 mb-8">
           Empowering you to take control of your health with cutting-edge tools, personalized plans, and expert guidance.
         </p>
-        <button className="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-600">
+        <button className="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-600" onClick={handleClick}>
+        <span>📒</span>
           Get Started
         </button>
       </div>
