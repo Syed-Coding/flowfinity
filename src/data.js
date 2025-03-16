@@ -86,7 +86,7 @@ export const issueLog = [
     issuedetails:
       "5th Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged'	Shift Handled by	Issue Assigned To	Status	Date	Actions	Comment",
     ShiftHandledBy: "Rishin",
-    issueAssignedTo: "Anjana",
+    issueAssignedTo: "Rahul",
     Status: "resolved",
     date: "2025-03-15",
     slaMiss: [
@@ -104,12 +104,12 @@ export const issueLog = [
   {
     ticketNumber: "ABC123JN6",
     Client: "XYZ",
-    Region: "PROD",
+    Region: "Region 2",
     issueClassification: "long run in DW_10 ",
     issuedetails:
       "6th Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged'	Shift Handled by	Issue Assigned To	Status	Date	Actions	Comment",
     ShiftHandledBy: "john",
-    issueAssignedTo: "Dinil",
+    issueAssignedTo: "Rakesh",
     Status: "Resolved",
     date: "2025-03-15",
     slaMiss: [
@@ -127,7 +127,7 @@ export const issueLog = [
   {
     ticketNumber: "ABC123JN7",
     Client: "XYZ",
-    Region: "UAT",
+    Region: "Region 1",
     issueClassification: "long run in DW_10 ",
     issuedetails:
       "7thLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged'	Shift Handled by	Issue Assigned To	Status	Date	Actions	Comment",
@@ -167,8 +167,8 @@ export const activityLog = [
     Date: "26/1/2024",
   },
   {
-    Client: "CweD",
-    Region: "UAT",
+    Client: "CWD",
+    Region: "Region 3",
     MailSub:
       "2nd long run in DW_10ustry's standard dummy text ever since the 1500s ",
     placeholder: [
@@ -190,8 +190,9 @@ export const importUpadtes = [
   {
     id: 1,
     UpaterName: "Rahul",
-    designation: "DEV",
-    Date: "27/2//2025",
+    designation: "Region 2",
+    Date: "27/2/2025",
+    confirmedBy: "Syed",
     Update:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use",
     isRead: false,
@@ -200,8 +201,9 @@ export const importUpadtes = [
     id: 2,
     UpaterName: "syed",
     designation: "member",
-    Date: "26/2//2025",
+    Date: "26/2/2025",
     isRead: false,
+    confirmedBy: "Rishin",
     Update:
       "2 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use",
   },
@@ -209,8 +211,9 @@ export const importUpadtes = [
     id: 3,
     UpaterName: "Ron",
     designation: "DBA",
-    Date: "26/2//2025",
+    Date: "26/2/2025",
     isRead: false,
+    confirmedBy: "Manager",
     Update:
       "3 rd It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use",
   },

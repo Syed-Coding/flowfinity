@@ -14,6 +14,7 @@ import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import ResetPassword from "./Pages/ResetPassword";
 import AuthLayout from './components/AuthLayout';// Import the new AuthLayout
+import PreviewPage from './Pages/PreviewPage';
 
 function App() {
   return (
@@ -36,8 +37,9 @@ function App() {
 
               <div className="p-6 overflow-auto mt-16">
                 <Routes>
-                  <Route path="/issue" element={<Issue />} />
-                  <Route path="/" element={<Dashboard />} />
+                <Route path="/" element={<PreviewPage/>} />
+                  <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/issue" element={<Issue />} />            
                   <Route path="/issue-log" element={<IssueLog />} />
                   <Route path="/activity" element={<Activity />} />
                   <Route path="/activity-log" element={<ActivityLog />} />

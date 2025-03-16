@@ -26,7 +26,7 @@ const AddTableDataForm = () => {
             Region: values.region,
             issueClassification: values.issueClassification,
             issuedetails: values.issueDetails,
-            ShiftHandledBy: "Michel",
+            ShiftHandledBy: "Syed",
             Status: "pending",
             date: today,
             slaMiss: [

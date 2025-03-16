@@ -29,7 +29,7 @@ const Sidebar = () => {
       {/* Navigation Links */}
       <nav className="flex-1 space-y-1 overflow-y-auto"> {/* Allow sidebar content to scroll if needed */}
         <div className="mb-3  border-b border-gray-100">
-          <NavItem icon={MdWeb} className="" label="Web XYZ" active={activeItem === "/xyz"} onClick={() => setActiveItem("/xyz")} />
+          <NavItem icon={MdWeb} className="" label="Home Page" active={activeItem === "/"} onClick={() => setActiveItem("/")} />
           {/* <div className="ml-4 mb-1">
             <NavItem icon={MdOutlineShortText} label="Issue" active={activeItem === "/issue"} onClick={() => setActiveItem("/issue")} />
             <NavItem icon={MdWrapText} label="Issue Log" active={activeItem === "/issue-log"} onClick={() => setActiveItem("/issue-log")} />
@@ -37,7 +37,7 @@ const Sidebar = () => {
 
 
         </div>
-        <NavItem icon={MdDashboardCustomize} label="Dashboard" active={activeItem === "/"} onClick={() => setActiveItem("/")} />
+        <NavItem icon={MdDashboardCustomize} label="Dashboard" active={activeItem === "/dashboard"} onClick={() => setActiveItem("/dashboard")} />
         <NavItem icon={AiOutlineIssuesClose} label="Issue" active={activeItem === "/issue"} onClick={() => setActiveItem("/issue")} />
         <NavItem icon={TbLogs} label="Issue Log" active={activeItem === "/issue-log"} onClick={() => setActiveItem("/issue-log")} />
         <NavItem icon={Activity} label="Activity" active={activeItem === "/activity"} onClick={() => setActiveItem("/activity")} />

@@ -30,7 +30,7 @@ const Topbar = () => {
           />
           <div className="flex flex-col">
             <span className="text-sm text-gray-700">
-              Hi, <span className="font-semibold text-gray-900">Michael</span>
+              Hi, <span className="font-semibold text-gray-900">Syed</span>
             </span>
             <span className="text-gray-500 font-light text-xs flex items-center">
               <span className="mr-1">(Member)</span>

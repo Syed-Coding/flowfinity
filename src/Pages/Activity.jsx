@@ -64,7 +64,7 @@ const ActivityForm = () => {
               rules={[{ required: true, message: 'Please select the client!' }]}
             >
               <Select showSearch allowClear placeholder="Select client">
-                <Option value="MND">MND</Option>
+                <Option value="Client1">Client 1</Option>
                 <Option value="Client2">Client 2</Option>
                 <Option value="Client3">Client 3</Option>
               </Select>
@@ -77,9 +77,13 @@ const ActivityForm = () => {
               rules={[{ required: true, message: 'Please select the region!' }]}
             >
               <Select allowClear placeholder="Select region" showSearch>
+                <Option value="Region1">Region 1</Option>
+                <Option value="Region2">Region 2</Option>
+                <Option value="Region3">Region 3</Option>
+                
                 <Option value="Prod">Prod</Option>
-                <Option value="Dev">Dev</Option>
-                <Option value="Test">Test</Option>
+
+
               </Select>
             </Form.Item>
           </Col>

@@ -125,7 +125,7 @@ const issueSlice = createSlice({
       });
     },
     resetFilter: (state, action) => {
-      return state;
+      return initialState;
     },
   },
 });
