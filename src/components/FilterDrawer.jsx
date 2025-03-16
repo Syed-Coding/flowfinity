@@ -87,7 +87,7 @@ const FilterDrawer = ({ isOpen, onClose, onApplyFilters }) => {
                         allowClear
                     >
                         <Option value="ram">Ram (dev)</Option>
-                        <Option value="shamil">Shamil (dev)</Option>
+                        <Option value="sham">Sham (dev)</Option>
                         <Option value="john">John (admin)</Option>
                         <Option value="Rahul">Rahul (member)</Option>
                         <Option value="syed">Syed (member)</Option>
@@ -103,7 +103,7 @@ const FilterDrawer = ({ isOpen, onClose, onApplyFilters }) => {
                         allowClear
                     >
                         <Option value="ram">Ram (dev)</Option>
-                        <Option value="shamil">Shamil (dev)</Option>
+                        <Option value="sham">Sham (dev)</Option>
                         <Option value="john">John (admin)</Option>
                         <Option value="Rahul">Rahul (member)</Option>
                         <Option value="syed">Syed (member)</Option>

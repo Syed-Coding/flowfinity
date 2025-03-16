@@ -117,7 +117,7 @@ const EditIssueDrawer = ({ isOpen, onClose, selectedIssue, updateIssue }) => {
             placeholder="select Assigned to"
           >
             <Option value="ram">Ram (dev)</Option>
-            <Option value="shamil">shamil(dev)</Option>
+            <Option value="sham">sham(dev)</Option>
             <Option value="john">john(admin)</Option>
             <Option value="Rahul">Rahul(member)</Option>
             <Option value="syed">syed(member)</Option>

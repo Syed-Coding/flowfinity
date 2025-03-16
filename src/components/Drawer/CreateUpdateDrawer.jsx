@@ -62,7 +62,7 @@ const CreateUpdateDrawer = ({ visible, onClose, onSubmit, userName }) => {
                         >
                             <Option value="syed">syed</Option>
                             <Option value="Ram">Ram</Option>
-                            <Option value="shamil">shamil</Option>
+                            <Option value="sham">sham</Option>
                             <Option value="john">john</Option>
                         </Select>
                     </Form.Item>
