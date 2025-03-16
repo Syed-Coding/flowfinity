@@ -12,7 +12,7 @@ const ActivityForm = () => {
   const dispatch = useDispatch();
 
   const onFinish = (values) => {
-    console.log('Form values:', values);
+    console.log('Form values: from activity', values);
     // Convert date and time to the desired format
     const formattedValues = {
       ...values,
@@ -23,13 +23,13 @@ const ActivityForm = () => {
       id: Date.now(),
       createdAt: dayjs().unix(), // Current timestamp
       createdBy: { // Static createdBy value
-        fname: 'Michel',
-        lname: 'Smith',
-        email: 'michel.smith@example.com',
-        role: 'Admin',
+        fname: 'Syed',
+        lname: 'I',
+        email: 'SI@example.com',
+        role: 'Member',
       },
     };
-    console.log('Formatted values:', formattedValues);
+    console.log('Formatted values: from activity', formattedValues);
     // Dispatch the action to create the activity
     dispatch(createActivity(formattedValues));
     form.resetFields();
@@ -150,9 +150,8 @@ const ActivityForm = () => {
         >
           <Select placeholder="Select time zone" showSearch allowClear>
             <Option value="EST">EST</Option>
-            <Option value="PST">PST</Option>
-            <Option value="CST">CST</Option>
-            <Option value="GMT">GMT</Option>
+            <Option value="PST">IST</Option>
+            <Option value="CST">MST</Option>
           </Select>
         </Form.Item>
 

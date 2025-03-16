@@ -15,7 +15,7 @@ const Dashboard = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [isHandleShowUpdates, setIsHandleShowUpdates] = useState(false)
     let updateData = useSelector((state) => state.impUpdates);
-    console.log(updateData);
+    console.log('updated data from dashboard',updateData);
     
     const dispatch = useDispatch();
     const userName = "Michael";

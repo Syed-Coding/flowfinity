@@ -40,7 +40,7 @@ const IssueLog = () => {
   };
 
   const handleUpdateIssue = (values) => {
-    console.log(values,"this is values on edit function");
+    console.log(values,"this is values on edit function from issue log");
     
     dispatch(updateIssue(values));
     setIsDrawerOpen(false);
@@ -65,7 +65,7 @@ const IssueLog = () => {
   };
 
   const handleComment=(data)=>{
-    console.log('swwwwwwwwwwwww',data);
+    console.log('hanlde comment from issue log',data);
     
     navigate("/comment",{state:data})
   }

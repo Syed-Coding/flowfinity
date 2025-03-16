@@ -74,7 +74,7 @@ const TableComponent = ({ data }) => {
       dataIndex: 'slaMiss',
       key: 'currentDbLatency',
       render: (currentDbLatency) => {
-        console.log(currentDbLatency[0]?.currentDbLatency, "this is current db latency");
+        console.log(currentDbLatency[0]?.currentDbLatency, "this is current db latency from table");
         return (currentDbLatency[0]?.currentDbLatency || "--");
       },
     },

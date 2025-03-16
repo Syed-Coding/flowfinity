@@ -145,45 +145,87 @@ export const issueLog = [
   },
 ];
 
-export const activityLog = [
+// export const activityLog = [
+//   {
+//     Client: "Client B",
+//     Region: "Prod",
+//     MailSub:
+//       "long run in DW_10ustry's standard dummy text ever since the 1500s ",
+//     placeholder: [
+//       {
+//         fromDate: "27/1/2025",
+//         fromTime: "3.00 PM",
+//         toDate: "28/1/2025",
+//         toTime: "6.00 PM",
+//         TimeZone: "EST",
+//       },
+//     ],
+//     action: "no action required",
+//     CreatedBy: "Syed",
+//     Date: "26/1/2024",
+//   },
+//   {
+//     Client: "Client A",
+//     Region: "Region 3",
+//     MailSub:
+//       "2nd long run in DW_10ustry's standard dummy text ever since the 1500s ",
+//     placeholder: [
+//       {
+//         fromDate: "29/1/2025",
+//         fromTime: "4.00 PM",
+//         toDate: "30/1/2025",
+//         toTime: "8.00 PM",
+//         TimeZone: "MST",
+//       },
+//     ],
+//     action: "Stop all HRDW",
+//     CreatedBy: "Syed",
+//     Date: "27/1/2024",
+//   },
+// ];
+
+export const newactivityLog = [
   {
-    Client: "Client B",
-    Region: "Prod",
-    MailSub:
-      "long run in DW_10ustry's standard dummy text ever since the 1500s ",
-    placeholder: [
-      {
-        fromDate: "27/1/2025",
-        fromTime: "3.00 PM",
-        toDate: "28/1/2025",
-        toTime: "6.00 PM",
-        TimeZone: "EST",
-      },
-    ],
+    id: "1",
+    client: "Client A",
+    region: "Prod",
+    mailSub:
+      "long run in DW_10ustry's standard dummy text ever since the 1500s",
+    fromDate: "27/1/2025",
+    fromTime: "3.00 PM",
+    toDate: "28/1/2025",
+    toTime: "6.00 PM",
+    timeZone: "EST",
     action: "no action required",
-    CreatedBy: "Syed",
-    Date: "26/1/2024",
+    createdBy: {
+      uid: 1,
+      fname: "syed",
+      lname: "I",
+      email: "testuser@gmail.com",
+    },
+    createdAt: 12343430,
   },
   {
-    Client: "Client A",
-    Region: "Region 3",
-    MailSub:
-      "2nd long run in DW_10ustry's standard dummy text ever since the 1500s ",
-    placeholder: [
-      {
-        fromDate: "29/1/2025",
-        fromTime: "4.00 PM",
-        toDate: "30/1/2025",
-        toTime: "8.00 PM",
-        TimeZone: "MST",
-      },
-    ],
-    action: "Stop all HRDW",
-    CreatedBy: "JOhn",
-    Date: "27/1/2024",
+    id: "1",
+    client: "Client B",
+    region: "Region 2",
+    mailSub:
+      "long run in DW_10ustry's standard dummy text ever since the 1500s",
+    fromDate: "02/9/2025",
+    fromTime: "3.00 PM",
+    toDate: "28/1/2025",
+    toTime: "6.00 PM",
+    timeZone: "EST",
+    action: "no action required",
+    createdBy: {
+      uid: 1,
+      fname: "syed",
+      lname: "I",
+      email: "testuser@gmail.com",
+    },
+    createdAt: 12343430,
   },
 ];
-
 export const importUpadtes = [
   {
     id: 1,

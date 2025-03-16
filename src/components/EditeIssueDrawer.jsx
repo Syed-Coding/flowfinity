@@ -5,7 +5,7 @@ import dayjs from 'dayjs';
 const { Option } = Select;
 
 const EditIssueDrawer = ({ isOpen, onClose, selectedIssue, updateIssue }) => {
-  console.log(selectedIssue, "selected issuesssssssssssssssssssssssss");
+  console.log(selectedIssue, "selected issues frfom edit issue drawer");
 
   const [form] = Form.useForm();
   const [isSlaMissModalVisible, setIsSlaMissModalVisible] = useState(false);

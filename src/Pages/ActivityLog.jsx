@@ -62,19 +62,39 @@ const ActivityLog = () => {
 
   const columns = [
     {
+      title: 'Sl.No',
+      key: 'rowNumber',
+      render: (text, record, index) => index + 1,
+    },
+    {
       title: 'Client',
       dataIndex: 'client',
       key: 'client',
+      render: (text) => (
+        <div className="whitespace-nowrap overflow-hidden text-ellipsis">
+          {text}
+        </div>
+      ),
     },
     {
       title: 'Region',
       dataIndex: 'region',
       key: 'region',
+      render: (text) => (
+        <div className="whitespace-nowrap overflow-hidden text-ellipsis">
+          {text}
+        </div>
+      ),
     },
     {
       title: 'Mail Subject',
       dataIndex: 'mailSub',
       key: 'mailSub',
+      render: (text) => (
+        <div className="whitespace-nowrap overflow-hidden text-ellipsis">
+          {text}
+        </div>
+      ),
     },
     {
       title: 'From Date',
@@ -90,6 +110,11 @@ const ActivityLog = () => {
       title: 'From Time',
       dataIndex: 'fromTime',
       key: 'fromTime',
+      render: (fromtime) => (
+        <span style={{ whiteSpace: 'nowrap' }}>
+         {fromtime}
+        </span>
+      )
     },
     {
       title: 'To Date',
@@ -105,16 +130,31 @@ const ActivityLog = () => {
       title: 'To Time',
       dataIndex: 'toTime',
       key: 'toTime',
+      render: (totime) => (
+        <span style={{ whiteSpace: 'nowrap' }}>
+         {totime}
+        </span>
+      )
     },
     {
       title: 'Time Zone',
       dataIndex: 'timeZone',
       key: 'timeZone',
+      render: (text) => (
+        <div className="whitespace-nowrap overflow-hidden text-ellipsis">
+          {text}
+        </div>
+      )
     },
     {
       title: 'Action',
       dataIndex: 'action',
       key: 'action',
+      render: (text) => (
+        <div className="whitespace-nowrap overflow-hidden text-ellipsis">
+          {text}
+        </div>
+      ),
     },
     {
       title: 'Created By',
@@ -122,7 +162,7 @@ const ActivityLog = () => {
       key: 'createdBy',
       render: (createdBy) => (
         <span>
-          {createdBy.fname} {createdBy.lname} ({createdBy.role})
+          {createdBy.fname} 
         </span>
       ),
     },

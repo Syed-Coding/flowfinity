@@ -1,49 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-
-const initialState = [
-  {
-    id: "1",
-    client: "MND",
-    region: "Prod",
-    mailSub:
-      "long run in DW_10ustry's standard dummy text ever since the 1500s",
-    fromDate: "27/1/2025",
-    fromTime: "3.00 PM",
-    toDate: "28/1/2025",
-    toTime: "6.00 PM",
-    timeZone: "EST",
-    action: "no action required",
-    createdBy: {
-      uid: 1,
-      fname: "test",
-      lname: "user",
-      email: "testuser@gmail.com",
-      role: "DEV",
-    },
-    createdAt: 12343430,
-  },
-  {
-    id: "1",
-    client: "IIY",
-    region: "Prod",
-    mailSub:
-      "long run in DW_10ustry's standard dummy text ever since the 1500s",
-    fromDate: "02/9/2025",
-    fromTime: "3.00 PM",
-    toDate: "28/1/2025",
-    toTime: "6.00 PM",
-    timeZone: "EST",
-    action: "no action required",
-    createdBy: {
-      uid: 1,
-      fname: "test",
-      lname: "user",
-      email: "testuser@gmail.com",
-      role: "DEV",
-    },
-    createdAt: 12343430,
-  },
-];
+import { newactivityLog } from "../data";
+const initialState = newactivityLog;
 
 const activitySlice = createSlice({
   name: "activitySlice",

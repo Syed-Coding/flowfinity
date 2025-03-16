@@ -19,7 +19,7 @@ const SignUp = () => {
     // Clear error if passwords match
     setError("");
 
-    console.log("Signup Details:", { email, password, role });
+    // console.log("Signup Details:", { email, password, role });
     // Add your signup logic here (e.g., API call)
   };
 

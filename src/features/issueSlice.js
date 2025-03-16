@@ -26,31 +26,25 @@ const issueSlice = createSlice({
           ? { ...y, Comment: delCom }
           : y
       );
-      console.log("fdddddddddddddddddddd", val);
-
       return val;
     },
     addcomments: (state, action) => {
-      console.log(action);
-      console.log("dsgiyuyuyuyuyuyuyuyuyuyuyu");
+      console.log("action in add commentts", action);
+
       const newData = state.filter(
         (x) => x.ticketNumber === action.payload.updatedNewData[0].ticketNumber
       );
-      // console.log("newwwwwwwwwwwwwwwwwwwwww", newData[0].ticketNumber);
+      console.log("newData in addcomments", newData[0].ticketNumber);
 
       newData[0]?.Comment?.unshift(action.payload.newComment);
     },
     updatecomments: (state, action) => {
-      console.log(action);
-
       const updatedComment = state.filter(
         (x) => x.ticketNumber === action.payload.updatedNewData[0].ticketNumber
       );
       const com = updatedComment[0].Comment.filter(
         (x) => x.id === action.payload.id
       );
-
-      console.log(com);
 
       com[0].content = action.payload.newContent;
     },

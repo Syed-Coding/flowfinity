@@ -12,7 +12,7 @@ const CustomComment = ({ author, content, datetime, file, onEdit, onDelete }) =>
     const [previewVisible, setPreviewVisible] = useState(false);
     const [previewImage, setPreviewImage] = useState('');
      const location = useLocation();
- console.log('dnsahdgb',author);
+
  
     const initials = author
         ?.split(' ')
