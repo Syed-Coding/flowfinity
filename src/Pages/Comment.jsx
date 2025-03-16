@@ -11,17 +11,23 @@ import { addcomments, deleteComment } from '../features/issueSlice';
 import { updatecomments } from '../features/issueSlice';
 const { TextArea } = Input;
 
+//getBase64 that converts a file (like an image or document) into a Base64-encoded string. 
+// Base64 encoding is a way to represent binary data (like files) as a text string, 
+// which is useful for things like embedding images in web pages or sending files over APIs.
+//This is useful for scenarios where you need to work with file data as text, such as uploading images to a server or embedding them directly in HTML or CSS.
 const getBase64 = (file) =>
     new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.readAsDataURL(file);
+        const reader = new FileReader(); //built-in JavaScript object to read the contents of files asynchronously.
+        reader.readAsDataURL(file); //method reads the file and converts it into a Base64-encoded data URL
         reader.onload = () => resolve(reader.result);
+        //The onload event is triggered when the file has been successfully read.
+        //When this happens, the resolve function is called with the result (reader.result), which is the Base64-encoded data URL.
         reader.onerror = (error) => reject(error);
     });
 
 const CommentSection = () => {
     const location = useLocation();
-    console.log('location bool from comment',!location);
+    console.log('location from comment',location);
     
     const dispatch = useDispatch();
   const comments = useSelector((state) => {

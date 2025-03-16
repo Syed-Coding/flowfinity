@@ -13,6 +13,8 @@ const CustomComment = ({ author, content, datetime, file, onEdit, onDelete }) =>
     const [previewImage, setPreviewImage] = useState('');
      const location = useLocation();
 
+     console.log('location from custom comment',location);
+
  
     const initials = author
         ?.split(' ')
