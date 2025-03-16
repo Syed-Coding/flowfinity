@@ -45,7 +45,7 @@ const CommentSection = () => {
     
         const newComment = {
             id: Date.now(), // Add a unique ID for each comment
-            author: 'Micheal Johne', // Replace with actual user name
+            author: 'Syed I', // Replace with actual user name
             content: value,
             datetime: new Date().toLocaleString(), // Add proper date and time
             file: fileList.map((file) => ({
@@ -104,7 +104,7 @@ const CommentSection = () => {
             {location?.state && <TableComponent data={location?.state} />}
             {!location?.state.slaPage && (
                 <div className="comment-input-container">
-                    <Avatar className="comment-avatar">MJ</Avatar>
+                    <Avatar className="comment-avatar">SI</Avatar>
                     <div className="comment-input-wrapper">
                         <Form.Item className='!mb-2'>
                             <div className="comment-textarea-container">

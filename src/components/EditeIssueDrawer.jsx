@@ -120,7 +120,7 @@ const EditIssueDrawer = ({ isOpen, onClose, selectedIssue, updateIssue }) => {
             <Option value="shamil">shamil(dev)</Option>
             <Option value="john">john(admin)</Option>
             <Option value="Rahul">Rahul(member)</Option>
-            <Option value="syed">syed(dev)</Option>
+            <Option value="syed">syed(member)</Option>
           </Select>
         </Form.Item>
         <Form.Item name="Status" label="Status">

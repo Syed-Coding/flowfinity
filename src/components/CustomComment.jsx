@@ -18,7 +18,7 @@ const CustomComment = ({ author, content, datetime, file, onEdit, onDelete }) =>
         ?.split(' ')
         .map((name) => name[0])
         .join('')
-        .toUpperCase() || 'M J'
+        .toUpperCase() || 'SI'
 
     const handleEdit = () => setIsEdit(true);
 

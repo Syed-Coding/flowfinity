@@ -90,7 +90,7 @@ const FilterDrawer = ({ isOpen, onClose, onApplyFilters }) => {
                         <Option value="shamil">Shamil (dev)</Option>
                         <Option value="john">John (admin)</Option>
                         <Option value="Rahul">Rahul (member)</Option>
-                        <Option value="syed">Syed (dev)</Option>
+                        <Option value="syed">Syed (member)</Option>
                     </Select>
                 </Form.Item>
 
@@ -106,7 +106,7 @@ const FilterDrawer = ({ isOpen, onClose, onApplyFilters }) => {
                         <Option value="shamil">Shamil (dev)</Option>
                         <Option value="john">John (admin)</Option>
                         <Option value="Rahul">Rahul (member)</Option>
-                        <Option value="syed">Syed (dev)</Option>
+                        <Option value="syed">Syed (member)</Option>
                     </Select>
                 </Form.Item>
 
