@@ -81,7 +81,7 @@ const Dashboard = () => {
                     }}
                 >
                     <Title level={3} style={{ color: '#1a73e8', marginBottom: 8 }}>
-                        Welcome Back, Michael
+                        Welcome Back, Syed
                     </Title>
                     <Text type="secondary" style={{ fontSize: 16 }}>
                         Here's what's happening with your updates today.

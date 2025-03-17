@@ -1,6 +1,6 @@
 export const issueLog = [
   {
-    ticketNumber: "ABC123JN1",
+    ticketNumber: "HYT1742188690812",
     Client: "Client B",
     Region: "Prod",
     issueClassification: "long run in DW_10 ",
@@ -9,7 +9,7 @@ export const issueLog = [
     ShiftHandledBy: "Syed",
     issueAssignedTo: null,
     Status: "pending",
-    date: "2025-03-15",
+    date: "2025-03-12",
     slaMiss: [
       {
         status: false,
@@ -22,7 +22,7 @@ export const issueLog = [
     Comment: [],
   },
   {
-    ticketNumber: "ABC123JN2",
+    ticketNumber: "HYT1742188690869",
     Client: "Client C",
     Region: "PROD",
     issueClassification: "long run in DW_10",
@@ -31,6 +31,8 @@ export const issueLog = [
     ShiftHandledBy: "john",
     issueAssignedTo: null,
     Status: "pending", // when pending no comments were added and no assignation occurs
+    date: "2025-03-13",
+
     slaMiss: [
       {
         status: false,
@@ -43,7 +45,7 @@ export const issueLog = [
     Comment: [],
   },
   {
-    ticketNumber: "ABC123JN3",
+    ticketNumber: "HYT174218869082",
     Client: "Client A",
     Region: "UAT",
     issueClassification: "long run in DM ",
@@ -57,7 +59,7 @@ export const issueLog = [
     Comment: [], // here one comment is added defaultly when assignation occurs
   },
   {
-    ticketNumber: "ABC123JN4",
+    ticketNumber: "HYT1742188690849",
     Client: "Client A",
     Region: "Prod",
     issueClassification: "long run in Claim ",
@@ -79,7 +81,7 @@ export const issueLog = [
     Comment: [],
   },
   {
-    ticketNumber: "ABC123JN5",
+    ticketNumber: "HYT17421886908784",
     Client: "Client C",
     Region: "Prod",
     issueClassification: "long run in Member ",
@@ -101,7 +103,7 @@ export const issueLog = [
     Comment: [],
   },
   {
-    ticketNumber: "ABC123JN6",
+    ticketNumber: "HYT1742188690811",
     Client: "Client A",
     Region: "Region 2",
     issueClassification: "long run in DW_10 ",
@@ -123,7 +125,7 @@ export const issueLog = [
     Comment: [],
   },
   {
-    ticketNumber: "ABC123JN7",
+    ticketNumber: "HYT1742188690895",
     Client: "Cliient C",
     Region: "Region 1",
     issueClassification: "long run in DW_10 ",
